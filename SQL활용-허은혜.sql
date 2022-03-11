@@ -110,14 +110,14 @@ from notice
 where notice_tit = '예매 안내';
 */
 
--- 13번 뷰의 생성
+-- 13번 뷰의 생성 my_view
 /*
 create view my_view
 as select login_info.member_id as 회원아이디, notice.notice_tit as 제목, notice.notice_txt as 내용, notice.notice_date as 작성일, notice.user_name as 작성자
 from login_info, notice;
 */
 
--- 14번 
+-- 14번 뷰의 생성 my_view2
 /*
 create view my_view2
 as select notice_tit as 제목, notice_date as 작성일, user_name as 작성자, member_id as 회원아이디
